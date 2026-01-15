@@ -44,8 +44,17 @@ export default function TabLayout() {
           ),
         }}
       />
-
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          tabBarIcon: ({ color }) => (
+            <MaterialIcons name="person" color={color} size={28} />
+          ),
+        }}
+      />
     </Tabs>
+
   );
 }
 

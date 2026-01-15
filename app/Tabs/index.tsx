@@ -4,7 +4,6 @@ export default function Index() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Home</Text>
-      
       <View style={styles.row}>
         <View style={styles.square} />
         <View style={styles.square} />
