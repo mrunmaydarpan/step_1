@@ -1,7 +1,16 @@
 import { Tabs } from 'expo-router';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import * as splashScreen from 'expo-splash-screen';
+import { useEffect } from 'react';
+
+splashScreen.preventAutoHideAsync();
 
 export default function TabLayout() {
+  useEffect(() => {
+    setTimeout(async () => {
+      await splashScreen.hideAsync();
+    }, 1000);
+  }, []);
   return (
     <Tabs
       screenOptions={{

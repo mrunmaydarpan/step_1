@@ -58,7 +58,7 @@ const Settings = () => {
                         style={styles.input}
                         value={broker}
                         onChangeText={setBroker}
-                        placeholder="mqtt://broker.example.com"
+                        placeholder="broker.example.com"
                         placeholderTextColor="#666"
                         autoCapitalize="none"
                     />
